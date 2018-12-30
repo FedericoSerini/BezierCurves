@@ -1,17 +1,13 @@
 package it.federicoserini.beziercurves.model;
 
-
 public class Coordinates {
-    private String vertex;
+
     private double x,y,z;
 
-    public Coordinates(){}
-
-    public Coordinates(double x, double y, double z, String vertex){
+    public Coordinates(double x, double y, double z){
         this.x = x;
         this.y = y;
         this.z = z;
-        this.vertex = vertex;
     }
 
     public double getX() {
@@ -37,8 +33,4 @@ public class Coordinates {
     public void setZ(double z) {
         this.z = z;
     }
-
-    public String getVertex() { return vertex; }
-
-    public void setVertex(String vertex) { this.vertex = vertex; }
 }
